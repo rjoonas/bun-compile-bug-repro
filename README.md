@@ -1,12 +1,19 @@
 # bun compile bug reproduction
 
+Bug reproduction repo for https://github.com/oven-sh/bun/issues/6113
+
 Project created with `bun init`.
 
 ```
+bun --revision
+1.0.4+a0081f9e29e72ae800373b536e03fe1d729c68ae
+
 # Runs fine
 bun index.ts
+
 # Compiles fine
 bun build --compile index.ts
+
 # Error when running executable
 ./index
 ```
